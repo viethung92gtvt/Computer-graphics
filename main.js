@@ -21,7 +21,7 @@ let circleShow = document.getElementById('circle-show');
 function drawCircleMidpoint(R, data) {
     let d = 1 - R;
     let x = 0;
-    let y = R;
+    let y = Number(R);
     let i = 1;
     while (x < y) {
         let point = {
@@ -57,34 +57,35 @@ circleShow.addEventListener('click', function (e) {
         canvasCircle.clearRect(-250, -250, 500, 500);
         VeTrucToaDo(canvasCircle);
         data.map((item) => {
+            console.log(item);
             // context.fillStyle = "#FF0000";
             // console.log(Number(item.x), Number(item.y))
             // context.fillRect(Number(item.x) + Number(X), Number(item.y) + Number(Y), 5, 5);
             //8 điểm đối xứng
             //1
             canvasCircle.fillStyle = "#FF0000";
-            canvasCircle.fillRect(Number(X) + (Number(item.x) + Number(X)), Number(Y) + (Number(item.y) + Number(Y)), 5, 5);
+            canvasCircle.fillRect((Number(X) + Number(item.x)) + Number(X), (Number(Y) + Number(item.y)) + Number(Y), 5, 5);
             //2
             canvasCircle.fillStyle = "#28de0e";
-            canvasCircle.fillRect(Number(X) - (Number(item.x) + Number(X)), Number(Y) + (Number(item.y) + Number(Y)), 5, 5);
+            canvasCircle.fillRect((Number(X) - Number(item.x)) + Number(X), (Number(Y) + Number(item.y)) + Number(Y), 5, 5);
             //3
             canvasCircle.fillStyle = "#4319ce";
-            canvasCircle.fillRect(Number(X) + (Number(item.x) + Number(X)), Number(Y) - (Number(item.y) + Number(Y)), 5, 5);
-            //4
+            canvasCircle.fillRect((Number(X) + Number(item.x)) + Number(X), (Number(Y) - Number(item.y)) + Number(Y), 5, 5);
+            // //4
             canvasCircle.fillStyle = "#cec619";
-            canvasCircle.fillRect(Number(X) - (Number(item.x) + Number(X)), Number(Y) - (Number(item.y) + Number(Y)), 5, 5);
-            //5
+            canvasCircle.fillRect((Number(X) - Number(item.x)) + Number(X), (Number(Y) - Number(item.y)) + Number(Y), 5, 5);
+            // //5
             canvasCircle.fillStyle = "#19c0ce";
-            canvasCircle.fillRect(Number(X) + (Number(item.y) + Number(Y)), Number(Y) + (Number(item.x) + Number(X)), 5, 5);
-            //6
+            canvasCircle.fillRect((Number(X) + Number(item.y)) + Number(X), (Number(Y) + Number(item.x)) + Number(Y), 5, 5);
+            // //6
             canvasCircle.fillStyle = "#a8d4ee";
-            canvasCircle.fillRect(Number(X) - (Number(item.y) + Number(Y)), Number(Y) + (Number(item.x) + Number(X)), 5, 5);
+            canvasCircle.fillRect((Number(X) - Number(item.y)) + Number(X), (Number(Y) + Number(item.x)) + Number(Y), 5, 5);
             //7
             canvasCircle.fillStyle = "#ce5119";
-            canvasCircle.fillRect(Number(X) + (Number(item.y) + Number(Y)), Number(Y) - (Number(item.x) + Number(X)), 5, 5);
+            canvasCircle.fillRect((Number(X) + Number(item.y)) + Number(X), (Number(Y) - Number(item.x)) + Number(Y), 5, 5);
 
             canvasCircle.fillStyle = "#39554b";
-            canvasCircle.fillRect(Number(X) - (Number(item.y) + Number(Y)), Number(Y) - (Number(item.x) + Number(X)), 5, 5);
+            canvasCircle.fillRect((Number(X) - Number(item.y)) + Number(X), (Number(Y) - Number(item.x)) + Number(Y), 5, 5);
         })
     }
 })
