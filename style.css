@@ -1,0 +1,58 @@
+body {
+    margin    : 0px;
+    padding   : 0px;
+    box-sizing: border-box;
+}
+
+.graphics {
+    margin       : 50px;
+    border-radius: 30px;
+    border       : 1px solid #ccc;
+}
+
+.graphics .graphics-header {
+    margin    : 20px auto;
+    display   : block;
+    text-align: center;
+}
+
+.graphics .graphics-body {
+    padding: 20px;
+    display: flex;
+}
+
+.graphics .graphics-body .graphics-form {
+
+    display       : flex;
+    flex-direction: column;
+    margin-right  : 50px;
+
+}
+
+.graphics .graphics-body .graphics-form .graphics-form-input {
+    padding: 10px 0px;
+}
+
+.graphics .graphics-body .graphics-form .graphics-form-input input {
+    width        : 200px;
+    border-radius: 20px;
+    padding      : 6px;
+    cursor       : pointer;
+}
+
+.graphics .graphics-body .graphics-form .graphics-form-btn {
+    width        : 100%;
+    text-align   : center;
+    margin-top   : 10px;
+    border       : 1px solid #ccc;
+    text-align   : center;
+    padding      : 8px 0px;
+    font-size    : 15px;
+    font-weight  : bold;
+    cursor       : pointer;
+    border-radius: 20px;
+}
+
+.graphics-canvas {
+    border: 1px solid #ccc;
+}
