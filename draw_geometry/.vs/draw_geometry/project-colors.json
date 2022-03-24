@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5cd1abd3-541a-4cd1-a28c-e8b005b9770e": {
+      "ProjectGuid": "5cd1abd3-541a-4cd1-a28c-e8b005b9770e",
+      "DisplayName": "draw_geometry",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

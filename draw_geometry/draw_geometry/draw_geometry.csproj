@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5CD1ABD3-541A-4CD1-A28C-E8B005B9770E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>draw_geometry</RootNamespace>
+    <AssemblyName>draw_geometry</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clock.Designer.cs">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex1.Designer.cs">
+      <DependentUpon>Ex1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex10.Designer.cs">
+      <DependentUpon>Ex10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex2.Designer.cs">
+      <DependentUpon>Ex2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex3.Designer.cs">
+      <DependentUpon>Ex3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex4.Designer.cs">
+      <DependentUpon>Ex4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex5.Designer.cs">
+      <DependentUpon>Ex5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex6.Designer.cs">
+      <DependentUpon>Ex6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex7.Designer.cs">
+      <DependentUpon>Ex7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex8.Designer.cs">
+      <DependentUpon>Ex8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ex9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ex9.Designer.cs">
+      <DependentUpon>Ex9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticeCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticeCircle.Designer.cs">
+      <DependentUpon>PracticeCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticeElip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticeElip.Designer.cs">
+      <DependentUpon>PracticeElip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticeLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticeLine.Designer.cs">
+      <DependentUpon>PracticeLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_process.cs" />
+    <EmbeddedResource Include="Clock.resx">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex1.resx">
+      <DependentUpon>Ex1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex10.resx">
+      <DependentUpon>Ex10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex2.resx">
+      <DependentUpon>Ex2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex3.resx">
+      <DependentUpon>Ex3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex4.resx">
+      <DependentUpon>Ex4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex5.resx">
+      <DependentUpon>Ex5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex6.resx">
+      <DependentUpon>Ex6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex7.resx">
+      <DependentUpon>Ex7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex8.resx">
+      <DependentUpon>Ex8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ex9.resx">
+      <DependentUpon>Ex9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticeCircle.resx">
+      <DependentUpon>PracticeCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticeElip.resx">
+      <DependentUpon>PracticeElip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticeLine.resx">
+      <DependentUpon>PracticeLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
